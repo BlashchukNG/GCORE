@@ -1,0 +1,9 @@
+{
+  "name": "com.gigames.core",
+  "version": "0.0.1",
+  "displayName": "GCORE",
+  "description": "A simple architecture that is designed to use some of the programming patterns.",
+  "author": {
+    "name": "GIGames"
+  }
+}
