@@ -1,19 +1,23 @@
-﻿using GIG.Asset.Extensions;
-using GIG.Asset.Templates.Abstract;
+﻿using GCORE.Extensions;
+using GCORE.Views;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace GIG.Asset.Templates
 {
+  [RequireComponent(typeof(UIView))]
   public class SimpleScreen :
-    BaseScreen
+    MonoBehaviour
   {
     public Button btnBack;
 
+    private UIView _view;
 
-    protected override void Awake()
+    protected void Awake()
     {
-      base.Awake();
-      btnBack.Action(Hide);
+      GetComponent<UIView>();
+
+      if (btnBack != null) btnBack.Action(_view.Hide);
     }
   }
 }

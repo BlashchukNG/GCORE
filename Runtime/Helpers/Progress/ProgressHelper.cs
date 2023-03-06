@@ -1,4 +1,4 @@
-namespace GIG.Asset.Helpers.Progress
+namespace GCORE.Helpers.Progress
 {
   public static class ProgressHelper
   {

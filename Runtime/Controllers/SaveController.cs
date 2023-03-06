@@ -1,35 +1,23 @@
-﻿using System;
-using GIG.Asset.Extensions;
+﻿using GCORE.Extensions;
 using UnityEngine;
 
-namespace GIG.Asset.Controllers
+namespace GGCORE.Controllers
 {
   public class SaveController :
     MonoBehaviour
   {
-    public SaveData data;
     public string key = "save";
 
-    private void Awake()
-    {
-      data = PlayerPrefs.HasKey(key)
-                   ? PlayerPrefs.GetString(key).FromJson<SaveData>()
-                   : new SaveData();
-    }
+    public T Load<T>()
+      where T : new() =>
+      PlayerPrefs.HasKey(key)
+        ? PlayerPrefs.GetString(key).FromJson<T>()
+        : new T();
 
 
-    private void OnDestroy() => Save();
-
-
-    public void Save()
+    public void Save<T>(T data)
     {
       PlayerPrefs.SetString(key, data.TOJson());
     }
-  }
-
-  [Serializable]
-  public sealed class SaveData
-  {
-    public int bestScore;
   }
 }

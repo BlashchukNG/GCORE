@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GIG.Asset.Providers
+namespace GCORE.Providers
 {
     public class Collision2DProvider :
         MonoBehaviour

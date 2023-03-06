@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine.UI;
 
-namespace GIG.Asset.Extensions
+namespace GCORE.Extensions
 {
     public static partial class Extensions
     {
