@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-namespace GIG.Asset.Extensions
+namespace GCORE.Extensions
 {
-    public static partial class Extensions
-    {
-        public static string TOJson<T>(this T obj) => JsonUtility.ToJson(obj, true);
-        public static T FromJson<T>(this string str) => JsonUtility.FromJson<T>(str);
-    }
+  public static partial class Extensions
+  {
+    public static string TOJson<T>(this T obj) => JsonUtility.ToJson(obj, true);
+    public static T FromJson<T>(this string str) => JsonUtility.FromJson<T>(str);
+  }
 }

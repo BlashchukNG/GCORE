@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GIG.Asset.Helpers.Vectors
+namespace GCORE.Helpers.Vectors
 {
   public static class Vector3Helper
   {

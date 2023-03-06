@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GIG.Asset.Views
+namespace GCORE.Views
 {
     public class ViewSlider :
         MonoBehaviour

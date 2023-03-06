@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GIG.Asset.Helpers.Bezier
+namespace GCORE.Helpers.Bezier
 {
   public static class BezierHelper
   {
